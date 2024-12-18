@@ -1,0 +1,25 @@
+{
+  "name": "custom-sql-syntax-highlighting",
+  "displayName": "Custom SQL Syntax Highlighting",
+  "description": "This was created to support some of the unique databricks syntax",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sql",
+      "aliases": ["SQL", "sql"],
+      "extensions": [".sql"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sql",
+      "scopeName": "source.sql",
+      "path": "./syntaxes/sql.tmLanguage.json"
+    }]
+  }
+}
