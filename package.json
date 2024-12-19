@@ -1,6 +1,6 @@
 {
-  "name": "custom-sql-syntax-highlighting",
-  "displayName": "Custom SQL Syntax Highlighting",
+  "name": "sql-syntax-mod",
+  "displayName": "Custom SQL Syntax Highlighting by Neos",
   "description": "This was created to support some of the unique databricks syntax",
   "version": "0.0.1",
   "engines": {
@@ -11,14 +11,14 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "sql",
-      "aliases": ["SQL", "sql"],
+      "id": "sql-mod",
+      "aliases": ["SQL mod"],
       "extensions": [".sql"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "sql",
-      "scopeName": "source.sql",
+      "language": "sql-mod",
+      "scopeName": "source.sql-mod",
       "path": "./syntaxes/sql.tmLanguage.json"
     }]
   }
